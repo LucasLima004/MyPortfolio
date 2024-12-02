@@ -9,33 +9,33 @@ const NavMenu: React.FC = () => {
                 <Menu>
                     <MenuItem>
                         <Item>
-                            <Link to="/">Início</Link>
+                            <Link to="/MyPortfolio">Início</Link>
                         </Item>
                     </MenuItem>
                     
                     <MenuItem>
                         <Item>
-                            <Link to="/skills">Skills</Link>
+                            <Link to="/MyPortfolio/skills">Skills</Link>
                         </Item>
                     </MenuItem>
                     <MenuItem>
                         <Item>
-                            <Link to="/portfolio">Portfólio</Link>
+                            <Link to="/MyPortfolio/portfolio">Portfólio</Link>
                         </Item>
                     </MenuItem>
                     <MenuItem>
                         <Item>
-                            <Link to="/about">Sobre</Link>
+                            <Link to="/MyPortfolio/about">Sobre</Link>
                         </Item>
                     </MenuItem>
                     <MenuItem>
                         <Item>
-                            <Link to="/contact">Contato</Link>
+                            <Link to="/MyPortfolio/contact">Contato</Link>
                         </Item>
                     </MenuItem>
                 </Menu>
             </Nav>
-            <Link to="/">
+            <Link to="/MyPortfolio">
                 <Logo widthNumber={50} />
             </Link>
         </NavArea>
