@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a3aaf4d0.css",
+    "main.js": "/Portfolio/static/js/main.9efa8a36.js",
+    "static/js/453.ace21015.chunk.js": "/Portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/background.jpg": "/Portfolio/static/media/background.c150bea65685e0fc6699.jpg",
+    "static/media/MyPerson.jpeg": "/Portfolio/static/media/MyPerson.287f3ff4a963b7e25de9.jpeg",
+    "static/media/task.svg": "/Portfolio/static/media/task.ee71e3dea6d76a10aafbb3a0d52a0479.svg",
+    "static/media/android.svg": "/Portfolio/static/media/android.4778d658ab468d596b537d526aecd181.svg",
+    "static/media/spa.svg": "/Portfolio/static/media/spa.a46cc7174843530c7051c5a4efd7245a.svg",
+    "static/media/crud.svg": "/Portfolio/static/media/crud.00a2bd828a369a0d85dafcd99a0c7bfa.svg",
+    "static/media/network.svg": "/Portfolio/static/media/network.086cfdc5c2756b7fbc398468224a0417.svg",
+    "static/media/bird.svg": "/Portfolio/static/media/bird.7d552568599481932a0a4bb77e9f6ddb.svg",
+    "index.html": "/Portfolio/index.html",
+    "main.a3aaf4d0.css.map": "/Portfolio/static/css/main.a3aaf4d0.css.map",
+    "main.9efa8a36.js.map": "/Portfolio/static/js/main.9efa8a36.js.map",
+    "453.ace21015.chunk.js.map": "/Portfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3aaf4d0.css",
+    "static/js/main.9efa8a36.js"
+  ]
+}
