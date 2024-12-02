@@ -8,6 +8,10 @@ export const ImageContainer = styled.div`
   height: 30%; 
   border-radius: 10px;
 
+  @media (max-width: 768px) {
+    width: 25%;
+  }
+
   &:hover img {
     transform: scale(1.1); 
     filter: brightness(0.7);

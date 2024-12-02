@@ -1,4 +1,3 @@
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -7,6 +6,11 @@ export const Container = styled.div`
     height: 75vh;
     display: flex;
     align-items: center;
+
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const MenuContainer = styled.div`
@@ -18,6 +22,15 @@ export const MenuContainer = styled.div`
     grid-template-rows: repeat(2, 1fr);    
     justify-items: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 50vh;
+        grid-template-columns: repeat(2);
+        grid-template-rows: repeat(3);
+        gap: 1rem;
+    }
+
 `;
 
 export const IconsContainer = styled.div`
@@ -27,6 +40,10 @@ export const IconsContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const SelectedProject = styled.div`
@@ -35,6 +52,11 @@ export const SelectedProject = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+        background-color: #2d3250;
+    }
 `;
 
 export const TextSelected = styled.div`
@@ -54,6 +76,13 @@ export const ProjectsIcon = styled.div`
     align-items: center;
     background-color: #2d3250;
     cursor: pointer;
+
+    
+    @media (max-width: 768px) {
+        width: 50px;
+        height:50px;
+        border-radius: 5px;
+    }
 `;
 
 export const ImageContent = styled.div<{ color: string }>`

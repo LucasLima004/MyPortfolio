@@ -10,4 +10,9 @@ export const ContainerDescription = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        padding: 3%;
+        height: 100%;
+    }
 `;
