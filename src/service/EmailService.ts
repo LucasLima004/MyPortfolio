@@ -1,6 +1,4 @@
-// src/services/smtpService.ts
-
-declare const Email: any; // Declarar EmailJS do SMTPJS
+declare const Email: any;
 
 const sendEmail = async (
   name: string,

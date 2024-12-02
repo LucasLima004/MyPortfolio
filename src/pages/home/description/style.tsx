@@ -10,10 +10,20 @@ export const ContainerDescription = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    
+    @media (max-width: 768px) {
+        height: 100%;
+    }
 `;
 
 export const DescriptionText = styled.div`
     text-align: center;
     margin: 0% 25% 0% 25%;
     font-size: 15px;
+
+    @media (max-width: 768px) {
+        margin: 0% 5% 2% 5%;
+        font-size: 10px;
+    }
 `;

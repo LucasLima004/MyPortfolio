@@ -5,6 +5,11 @@ export const Container = styled.div`
     width: 100%;
     height: 70vh;
     display: flex;
+
+    @media (max-width: 768px) {
+        height:100%;
+        flex-direction: column;
+    }
 `;
 
 export const ContactContainer = styled.div`
@@ -16,6 +21,11 @@ export const ContactContainer = styled.div`
     justify-content: center;
     background-color: #222222;
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.8);
+
+    @media (max-width: 768px) {
+        padding: 1rem 0 1rem 0;
+        width: 100%;
+    }
 `;
 
 export const TransparentContainer = styled.div`
@@ -26,6 +36,12 @@ export const TransparentContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+        background-color: #2d3250;
+    }
 `;
 
 export const Title = styled.h1`
@@ -37,6 +53,11 @@ export const Line = styled.div`
     height: 3rem;
     width:2px;
     background-color: #2d3250;
+
+    
+    @media (max-width: 768px) {
+        background-color: #acacac;
+    }
 `;
 
 export const TextContent = styled.p`

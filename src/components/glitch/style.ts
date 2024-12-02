@@ -64,6 +64,11 @@ const StackSpan = styled.span<StackSpanProps>`
   &:nth-child(even) {
     --glitch-translate: -8px;
   }
+
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 export { Stack, StackSpan };
