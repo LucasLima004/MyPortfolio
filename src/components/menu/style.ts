@@ -50,6 +50,10 @@ export const Menu = styled.ul`
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const MenuItem = styled.li`

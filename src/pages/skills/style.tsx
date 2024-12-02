@@ -12,6 +12,11 @@ export const Container = styled.div`
     height: 100%;
     background-color: #2d3250;
     display: flex;
+
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
 `;
 
 export const Title = styled.h1`
@@ -30,6 +35,10 @@ export const ContainerFrontSkill = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const ContainerBackSkill = styled.div`
@@ -39,6 +48,10 @@ export const ContainerBackSkill = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `;
 
 export const ContainerSkill = styled.div`

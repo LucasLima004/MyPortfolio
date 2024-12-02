@@ -10,11 +10,11 @@ import Portfolio from "../pages/portfolio";
 export default function routering() {
     return createBrowserRouter([
         {
-            path: "/MyPortfolio",  // Caminho base
+            path: "/MyPortfolio",
             element: <App />,
             children: [
                 {
-                    path: "",  // Rota base, renderiza Home
+                    path: "",
                     element: (
                         <ErrorBoundary>
                             <Home />
@@ -22,7 +22,7 @@ export default function routering() {
                     ),
                 },
                 {
-                    path: "skills",  // Caminho relativo para Skills
+                    path: "skills",
                     element: (
                         <ErrorBoundary>
                             <Skills />
@@ -30,7 +30,7 @@ export default function routering() {
                     ),
                 },
                 {
-                    path: "about",  // Caminho relativo para About
+                    path: "about",
                     element: (
                         <ErrorBoundary>
                             <About />
@@ -38,7 +38,7 @@ export default function routering() {
                     ),
                 },
                 {
-                    path: "contact",  // Caminho relativo para Contact
+                    path: "contact",
                     element: (
                         <ErrorBoundary>
                             <Contact />
@@ -46,7 +46,7 @@ export default function routering() {
                     ),
                 },
                 {
-                    path: "portfolio",  // Caminho relativo para Portfolio
+                    path: "portfolio",
                     element: (
                         <ErrorBoundary>
                             <Portfolio />
@@ -54,7 +54,7 @@ export default function routering() {
                     ),
                 },
                 {
-                    path: "*",  // Redireciona para "/MyPortfolio" caso não tenha rota
+                    path: "*",
                     element: <Navigate to="/MyPortfolio" />,
                 },
             ],
