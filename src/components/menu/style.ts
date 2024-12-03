@@ -1,16 +1,17 @@
 import styled from 'styled-components';
+import { Colors } from '../../utils/Colors';
 
 export const Item = styled.span`
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(90deg, #ff6f61, #de1a1a);
+    background: linear-gradient(90deg, ${Colors.rose}, ${Colors.deepGray});
     background-clip: text;
     -webkit-background-clip: text;
-    color: #fff;
+    color: ${Colors.white};
     transition: background 0.3s ease;
 
     &:hover {
-        background: linear-gradient(135deg, #07a7e3 0%, #32dac3 100%);
+        background: linear-gradient(135deg, ${Colors.lightPink} 0%, ${Colors.skyBlue} 100%);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -69,7 +70,7 @@ export const NavArea = styled.div`
         rgba(0, 0, 0, 0.1),
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.4),
-        #2d3250
+        ${Colors.deepBlue}
     );
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.8);
 `;

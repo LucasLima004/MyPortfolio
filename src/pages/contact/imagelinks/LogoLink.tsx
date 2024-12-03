@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Colors } from '../../../utils/Colors';
 
 interface ImageWithTitleProps {
   svg: React.ReactNode; // Recebe o SVG como um nó React
@@ -24,10 +25,10 @@ const Title = styled.h3`
   margin: 0;
   padding-left: 1rem;
   font-size: 16px;
-  color: #fff;
+  color: ${Colors.darkGray};
 `;
 
-const ImageWithTitle: React.FC<ImageWithTitleProps> = ({ svg, title, link, color = '#000' }) => {
+const ImageWithTitle: React.FC<ImageWithTitleProps> = ({ svg, title, link, color = Colors.black }) => {
 
   const svgWithColor = React.cloneElement(svg as React.ReactElement, {
     style: { fill: color }, 

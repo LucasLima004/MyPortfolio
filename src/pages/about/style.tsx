@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../utils/Colors';
 
 export const DescriptionText = styled.div`
     text-align: center;
@@ -38,7 +39,7 @@ export const ContainerAbout = styled.div`
     padding-right: 2%;
     @media (max-width: 768px) {
         padding-right: 0%;
-        background-color: #222222;
+        background-color: ${Colors.darkGray};
         width: 100%; 
     }
 `;
@@ -57,7 +58,7 @@ export const TransparentContainer = styled.div`
 
 export const ContainerFooter = styled.footer`
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.8);
-    background-color: #222222;
+    background-color: ${Colors.darkGray};
     height: 6vh;
     display: flex;
     flex-direction: column;
