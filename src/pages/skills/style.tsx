@@ -13,7 +13,6 @@ export const Container = styled.div`
     height: 100%;
     background-color: ${Colors.darkBlue};
     display: flex;
-
     
     @media (max-width: 768px) {
         flex-direction: column;

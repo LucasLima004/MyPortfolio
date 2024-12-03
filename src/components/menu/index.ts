@@ -1,2 +1,2 @@
-import navMenu from "./menu";
-export default navMenu;
+import { NavMenu } from "./menu";
+export default NavMenu;

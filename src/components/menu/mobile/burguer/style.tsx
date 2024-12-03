@@ -1,14 +1,9 @@
-import React from "react";
 import styled from "styled-components";
-import { Colors } from "../../../utils/Colors";
+import { Colors } from "../../../../utils/Colors";
+import { StyledBurgerProps } from "../../../../utils/Interfaces";
 
-interface StyledBurgerProps {
-  open: boolean;
-}
-
-const StyledBurger = styled.button<StyledBurgerProps>`
+export const StyledBurger = styled.button<StyledBurgerProps>`
   position: absolute;
-  top: 5%;
   left: 2rem;
   display: flex;
   flex-direction: column;
@@ -48,20 +43,3 @@ const StyledBurger = styled.button<StyledBurgerProps>`
     }
   }
 `;
-
-interface BurgerProps {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-const Burger: React.FC<BurgerProps> = ({ open, setOpen }) => {
-  return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
-      <div />
-      <div />
-      <div />
-    </StyledBurger>
-  );
-};
-
-export default Burger;

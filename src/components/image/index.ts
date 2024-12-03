@@ -1,2 +1,2 @@
-import HoverImageComponent from "./ImageContainer";
-export default HoverImageComponent
+import { HoverImageComponent } from "./ImageContainer";
+export default HoverImageComponent;

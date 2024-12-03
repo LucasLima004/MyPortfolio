@@ -14,6 +14,4 @@ export const Colors = {
     black: "#000",
     deepPurple: "#673265",
     grayPurple: "#1a0d19"
-
-
 };

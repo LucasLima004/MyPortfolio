@@ -1,8 +1,9 @@
 import Glitch from "../../components/glitch";
-import HoverImageComponent from "../../components/image/ImageContainer";
-import Text from "./code"
+import Code from "./code"
 import myImage from '../../assets/imgs/MyPerson.jpeg'; 
 import { Container, ContainerAbout, ContainerFooter, DescriptionText, Title, TransparentContainer } from "./style";
+import { Messages } from "../../utils/Messages";
+import HoverImageComponent from "../../components/image";
 
 export const About = () => {
     return (
@@ -10,19 +11,18 @@ export const About = () => {
             <Container>
                 <TransparentContainer>
                     <Glitch>
-                        <Title>Sobre mim</Title>
+                        <Title>{Messages.titleAboutMe}</Title>
                     </Glitch>
                     <DescriptionText>
-                        Olá, sou uma pessoa que gosta bastante de jogos de video-game principalmente os de FPS e single-player. Passei um tempo também fazendo animações e design
-                        gráfico, fazendo ilustrações, edições de foto, modelagem 3D com texturização e renderização, animações 3D e 2D.
+                        {Messages.textAboutMe}
                     </DescriptionText>
                     <HoverImageComponent imageSrc={myImage}/>
                 </TransparentContainer>
                 <ContainerAbout>    
-                    <Text />
+                    <Code />
                 </ContainerAbout>
             </Container>
-            <ContainerFooter>Desenvolvido por Lucas Lima</ContainerFooter>
+            <ContainerFooter>{Messages.developBy}</ContainerFooter>
         </>
     );
 };

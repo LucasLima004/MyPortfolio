@@ -5,7 +5,7 @@ interface HoverImageComponentProps {
   imageSrc: string;
 }
 
-const HoverImageComponent: React.FC<HoverImageComponentProps> = ({ imageSrc }) => {
+export const HoverImageComponent: React.FC<HoverImageComponentProps> = ({ imageSrc }) => {
   return (
     <ImageContainer>
       <ImageContent
@@ -14,5 +14,3 @@ const HoverImageComponent: React.FC<HoverImageComponentProps> = ({ imageSrc }) =
     </ImageContainer>
   );
 };
-
-export default HoverImageComponent;
