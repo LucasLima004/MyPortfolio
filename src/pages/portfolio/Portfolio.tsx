@@ -7,6 +7,7 @@ import { ReactComponent as Crud } from "./../../assets/imgs/crud.svg"
 import { ReactComponent as Spa } from "./../../assets/imgs/spa.svg"
 import { useState } from "react";
 import Glitch from "../../components/glitch";
+import { Colors } from "../../utils/Colors";
 
 export const Portfolio = () => {
     const [selectProject, setSelectProject] = useState<string>("");
@@ -104,22 +105,22 @@ export const Portfolio = () => {
                 <IconsContainer>
                     <MenuContainer>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("android")}}>{<Android />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("android")}}>{<Android />}</ImageContent>
                         </ProjectsIcon>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("network")}}>{<Network />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("network")}}>{<Network />}</ImageContent>
                         </ProjectsIcon>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("bird")}}>{<Bird />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("bird")}}>{<Bird />}</ImageContent>
                         </ProjectsIcon>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("task")}}>{<Task />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("task")}}>{<Task />}</ImageContent>
                         </ProjectsIcon>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("crud")}}>{<Crud />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("crud")}}>{<Crud />}</ImageContent>
                         </ProjectsIcon>
                         <ProjectsIcon>
-                            <ImageContent color={"#ffffff"} onClick={() => {setSelectProject("spa")}}>{<Spa />}</ImageContent>
+                            <ImageContent color={Colors.white} onClick={() => {setSelectProject("spa")}}>{<Spa />}</ImageContent>
                         </ProjectsIcon>
                     </MenuContainer>
                 </IconsContainer>

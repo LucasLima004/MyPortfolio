@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import { Colors } from "../../../utils/Colors";
 
 export const TitleName = styled.h1`
     margin:0;
-    color: #A9A9A9	;
+    color: ${Colors.lightGray}	;
     text-align: center;
     font-size: 2rem;
     padding-top: 15rem;

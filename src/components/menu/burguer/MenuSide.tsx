@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Colors } from "../../../utils/Colors";
 
 interface StyledMenuProps {
   open: boolean;
@@ -10,7 +11,7 @@ const StyledMenu = styled.nav<StyledMenuProps>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #effffa;
+  background: ${Colors.light};
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   height: 100vh; 
   width: 100%;
@@ -32,7 +33,7 @@ const StyledMenu = styled.nav<StyledMenuProps>`
     padding: 2rem 0;
     font-weight: bold;
     letter-spacing: 0.5rem;
-    color: #0d0c1d;
+    color: ${Colors.darkBlue};
     text-decoration: none;
     transition: color 0.3s linear;
 
@@ -42,7 +43,7 @@ const StyledMenu = styled.nav<StyledMenuProps>`
     }
 
     &:hover {
-      color: #343078;
+      color: ${Colors.purple};
     }
   }
 `;

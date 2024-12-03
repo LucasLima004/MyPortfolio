@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../utils/Colors";
 
 export const Container = styled.div`
     margin-top: 2rem;
@@ -16,7 +17,7 @@ export const Container = styled.div`
 export const MenuContainer = styled.div`
     width: 70%;
     height: 50%;
-    background-color: #222222;
+    background-color: ${Colors.darkGray};
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);    
@@ -36,7 +37,7 @@ export const MenuContainer = styled.div`
 export const IconsContainer = styled.div`
     width: 50%;
     height: 100%;
-    background-color: #222222;
+    background-color: ${Colors.darkGray};
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +56,7 @@ export const SelectedProject = styled.div`
     
     @media (max-width: 768px) {
         width: 100%;
-        background-color: #2d3250;
+        background-color: ${Colors.deepBlue};
     }
 `;
 
@@ -74,7 +75,7 @@ export const ProjectsIcon = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2d3250;
+    background-color: ${Colors.deepBlue};
     cursor: pointer;
 
     

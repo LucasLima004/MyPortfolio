@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Colors } from "../../utils/Colors";
 
 export const Container = styled.div`
     margin-top: 2.5%;
@@ -19,7 +20,7 @@ export const ContactContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #222222;
+    background-color: ${Colors.darkGray};
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.8);
 
     @media (max-width: 768px) {
@@ -40,7 +41,7 @@ export const TransparentContainer = styled.div`
     @media (max-width: 768px) {
         width: 100%;
         padding: 0;
-        background-color: #2d3250;
+        background-color: ${Colors.deepBlue};
     }
 `;
 
@@ -52,11 +53,11 @@ export const Title = styled.h1`
 export const Line = styled.div`
     height: 3rem;
     width:2px;
-    background-color: #2d3250;
+    background-color: ${Colors.deepBlue};
 
     
     @media (max-width: 768px) {
-        background-color: #acacac;
+        background-color: ${Colors.lightGray};
     }
 `;
 
