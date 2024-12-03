@@ -13,8 +13,7 @@ export const About = () => {
                         <Title>Sobre mim</Title>
                     </Glitch>
                     <DescriptionText>
-                        Olá, sou uma pessoa que gosta bastante de jogos de video-game principalmente os de FPS e single-player,
-                        Descobri também que gosto de cozinhar nas horas vagas, não é por quê eu que faço a comida. Passei um tempo também fazendo animações e design
+                        Olá, sou uma pessoa que gosta bastante de jogos de video-game principalmente os de FPS e single-player. Passei um tempo também fazendo animações e design
                         gráfico, fazendo ilustrações, edições de foto, modelagem 3D com texturização e renderização, animações 3D e 2D.
                     </DescriptionText>
                     <HoverImageComponent imageSrc={myImage}/>

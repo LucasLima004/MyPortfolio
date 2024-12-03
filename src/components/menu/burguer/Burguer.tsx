@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Colors } from "../../../utils/Colors";
 
 interface StyledBurgerProps {
   open: boolean;
@@ -27,7 +28,7 @@ const StyledBurger = styled.button<StyledBurgerProps>`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
+    background: ${({ open }) => (open ? Colors.darkBlue : Colors.light)};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;

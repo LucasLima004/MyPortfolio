@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../utils/Colors';
 
 export const DescriptionText = styled.p`
     margin: 2 rem;
@@ -10,7 +11,7 @@ export const DescriptionText = styled.p`
 export const Container = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #2d3250;
+    background-color: ${Colors.darkBlue};
     display: flex;
 
     
@@ -42,7 +43,7 @@ export const ContainerFrontSkill = styled.div`
 `;
 
 export const ContainerBackSkill = styled.div`
-    background-color: #222222;
+    background-color: ${Colors.darkGray};
     width: 50%;
     box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.8);
     display: flex;

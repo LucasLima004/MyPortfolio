@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { Colors } from '../../../utils/Colors';
 
-const $startColor = '#673265';
-const $endColor = '#1a0d19';
+const $startColor = Colors.deepPurple;
+const $endColor = Colors.grayPurple;
 
 export const Container = styled.div`
   width: 100%;  
@@ -21,7 +22,7 @@ export const ProgressWrapper = styled.div`
 
 export const ProgressBarBase = styled.div<{ width: number }>`
   height: 5px;  
-  background-color: #ee303c;
+  background-color: ${Colors.rose};
   border-radius: 4px;
   transition: 0.4s linear;
   transition-property: width, background-color;
