@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MyPortfolio/static/css/main.aa679b8f.css",
+    "main.js": "/MyPortfolio/static/js/main.40f04032.js",
+    "static/js/453.ace21015.chunk.js": "/MyPortfolio/static/js/453.ace21015.chunk.js",
+    "static/media/background.jpg": "/MyPortfolio/static/media/background.c150bea65685e0fc6699.jpg",
+    "static/media/MyPerson.jpeg": "/MyPortfolio/static/media/MyPerson.287f3ff4a963b7e25de9.jpeg",
+    "static/media/task.svg": "/MyPortfolio/static/media/task.ee71e3dea6d76a10aafbb3a0d52a0479.svg",
+    "static/media/android.svg": "/MyPortfolio/static/media/android.30cf34c57a0a7e6a6ac70052a07afe3f.svg",
+    "static/media/spa.svg": "/MyPortfolio/static/media/spa.a46cc7174843530c7051c5a4efd7245a.svg",
+    "static/media/crud.svg": "/MyPortfolio/static/media/crud.00a2bd828a369a0d85dafcd99a0c7bfa.svg",
+    "static/media/network.svg": "/MyPortfolio/static/media/network.086cfdc5c2756b7fbc398468224a0417.svg",
+    "static/media/bird.svg": "/MyPortfolio/static/media/bird.7d552568599481932a0a4bb77e9f6ddb.svg",
+    "index.html": "/MyPortfolio/index.html",
+    "main.aa679b8f.css.map": "/MyPortfolio/static/css/main.aa679b8f.css.map",
+    "main.40f04032.js.map": "/MyPortfolio/static/js/main.40f04032.js.map",
+    "453.ace21015.chunk.js.map": "/MyPortfolio/static/js/453.ace21015.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa679b8f.css",
+    "static/js/main.40f04032.js"
+  ]
+}
