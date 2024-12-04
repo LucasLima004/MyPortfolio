@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Item, Menu, MenuItem, Nav, NavArea } from './style';
 import Logo from '../logo';
 import { Link } from 'react-router-dom';
-import Burger from './burguer/Burguer';
-import MenuSide from './burguer/MenuSide';
+import { MenuMessages } from '../../utils/Messages';
+import Burger from './mobile/burguer';
+import MenuSide from './mobile/menu';
 
-const NavMenu: React.FC = () => {
+export const NavMenu: React.FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [open, setOpen] = useState<boolean>(false);
 
@@ -38,7 +39,7 @@ const NavMenu: React.FC = () => {
             <MenuItem>
               <Item>
                 <Link to="/MyPortfolio" onClick={() => setOpen(false)}>
-                  Início
+                  {MenuMessages.initial}
                 </Link>
               </Item>
             </MenuItem>
@@ -46,28 +47,28 @@ const NavMenu: React.FC = () => {
             <MenuItem>
               <Item>
                 <Link to="/MyPortfolio/skills" onClick={() => setOpen(false)}>
-                  Skills
+                  {MenuMessages.skill}
                 </Link>
               </Item>
             </MenuItem>
             <MenuItem>
               <Item>
                 <Link to="/MyPortfolio/portfolio" onClick={() => setOpen(false)}>
-                  Portfólio
+                  {MenuMessages.portoflio}
                 </Link>
               </Item>
             </MenuItem>
             <MenuItem>
               <Item>
                 <Link to="/MyPortfolio/about" onClick={() => setOpen(false)}>
-                  Sobre
+                  {MenuMessages.about}
                 </Link>
               </Item>
             </MenuItem>
             <MenuItem>
               <Item>
                 <Link to="/MyPortfolio/contact" onClick={() => setOpen(false)}>
-                  Contato
+                  {MenuMessages.contact}
                 </Link>
               </Item>
             </MenuItem>
@@ -80,5 +81,3 @@ const NavMenu: React.FC = () => {
     </NavArea>
   );
 };
-
-export default NavMenu;

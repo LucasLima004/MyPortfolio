@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import NavMenu from '../menu/menu';
 import Loader from '../loader';
+import { NavMenu } from '../menu/menu';
 
 const App: React.FC = () => {
   return (
