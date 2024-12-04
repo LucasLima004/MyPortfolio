@@ -16,5 +16,5 @@ export const Title = styled.h3`
     margin: 0;
     padding-left: 1rem;
     font-size: 16px;
-    color: ${Colors.darkGray};
+    color: ${Colors.white};
 `;

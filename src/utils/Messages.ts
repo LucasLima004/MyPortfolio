@@ -6,6 +6,7 @@ export const Messages = {
     developBy: "Desenvolvido por Lucas Lima",
     contactTitle: "Contact",
     contactText: "Entre em contato comigo.",
+    titleCellNumber: "Celular :",
     cellNumber: "(81) 9 9216-0054",
     emailSendSucess: "E-mail enviado com sucesso!",
     emailSendFail: "Falha ao enviar o e-mail. Tente novamente.",
