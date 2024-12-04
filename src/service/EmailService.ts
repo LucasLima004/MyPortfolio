@@ -1,3 +1,5 @@
+import { Messages } from "../utils/Messages";
+
 declare const Email: any;
 
 const sendEmail = async (
@@ -23,9 +25,9 @@ const sendEmail = async (
 
   try {
     const response = await Email.send(emailDetails);
-    console.log('E-mail enviado com sucesso!', response);
+    console.log(Messages.emailSendSucess, response);
   } catch (error) {
-    console.error('Erro ao enviar e-mail:', error);
+    console.error(`${Messages.emailSendFail}:`, error);
   }
 };
 

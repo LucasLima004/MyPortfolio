@@ -1,7 +1,8 @@
 import Glitch from "../../components/glitch";
 import { Colors } from "../../utils/Colors";
+import { Messages, URI } from "../../utils/Messages";
 import ContactForm from "./form";
-import ImageWithTitle from "./imagelinks/LogoLink";
+import { ImageWithTitle } from "./imagelinks/LogoLink";
 import { ContactContainer, ContactWithMe, Container, Line, Phone, PhoneNumber, SocialMedia, TextContent, Title, TransparentContainer } from "./style";
 
 export const Contact = () => {
@@ -13,14 +14,11 @@ export const Contact = () => {
                 </ContactContainer>
                 <TransparentContainer>
                     <Glitch>
-                        <Title>Contact</Title>
+                        <Title>{Messages.contactTitle}</Title>
                     </Glitch>
                     <Line />
-                    <TextContent>
-                        Entre em contato comigo.
-                    </TextContent>
+                    <TextContent>{Messages.contactText}</TextContent>
                     <ContactWithMe>
-
                         <Phone>
                             <ImageWithTitle
                                 svg={
@@ -30,10 +28,10 @@ export const Contact = () => {
                                 }
                                 title={"Celular :"}
                                 color={Colors.white}   
-                                link={"tel:(81) 9 9216-0054"}
+                                link={`tel: ${Messages.cellNumber}`}
                             />
                             <PhoneNumber>
-                                (81) 9 9216-0054
+                                {Messages.cellNumber}
                             </PhoneNumber>
                         </Phone>
 
@@ -45,7 +43,7 @@ export const Contact = () => {
                                     </svg>}
                                 title={""}
                                 color={Colors.white}
-                                link={"https://w.app/QinlPf"}
+                                link={URI.whatsApp}
                             />
                             <ImageWithTitle
                                 svg={
@@ -55,7 +53,7 @@ export const Contact = () => {
                                 }
                                 title={""}
                                 color={Colors.white}
-                                link={"https://github.com/LucasLima004"}
+                                link={URI.gitHub}
                             />
                             <ImageWithTitle
                                 svg={
@@ -65,12 +63,10 @@ export const Contact = () => {
                                 }
                                 title={""}
                                 color={Colors.white}
-                                link={"https://www.linkedin.com/in/lucas-lima-786999291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"}
+                                link={URI.linkendin}
                             />
                         </SocialMedia>
-
                     </ContactWithMe>
-
                 </TransparentContainer>
             </Container>
         </>

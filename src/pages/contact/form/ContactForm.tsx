@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Input, TextArea, Button } from './style';
 import sendEmail from '../../../service/EmailService';
+import { Messages } from '../../../utils/Messages';
 
 const ContactForm: React.FC = () => {
   const [name, setName] = useState<string>('');
@@ -35,13 +36,13 @@ const ContactForm: React.FC = () => {
 
     try {
       await sendEmail(name, email, subject, message);
-      setSuccessMessage('E-mail enviado com sucesso!');
+      setSuccessMessage(Messages.emailSendSucess);
       setName('');
       setEmail('');
       setSubject('');
       setMessage('');
     } catch (error) {
-      setErrorMessage('Falha ao enviar o e-mail. Tente novamente.');
+      setErrorMessage(Messages.emailSendFail);
     } finally {
       setLoading(false);
     }
@@ -54,7 +55,7 @@ const ContactForm: React.FC = () => {
         type="text"
         id="name"
         name="name"
-        placeholder="Nome"
+        placeholder={Messages.formName}
         value={name}
         onChange={handleNameChange}
         required
@@ -64,7 +65,7 @@ const ContactForm: React.FC = () => {
         type="email"
         id="email"
         name="email"
-        placeholder="E-mail"
+        placeholder={Messages.formEmail}
         value={email}
         onChange={handleEmailChange}
         required
@@ -74,7 +75,7 @@ const ContactForm: React.FC = () => {
         type="text"
         id="subject"
         name="subject"
-        placeholder="Assunto"
+        placeholder={Messages.formSubject}
         value={subject}
         onChange={handleSubjectChange}
         required
@@ -83,14 +84,14 @@ const ContactForm: React.FC = () => {
       <TextArea
         id="text-area"
         name="text-area"
-        placeholder="Mensagem"
+        placeholder={Messages.formMessage}
         value={message}
         onChange={handleMessageChange}
         required
       />
       
       <Button type="submit" disabled={loading}>
-        {loading ? 'Enviando...' : 'Enviar'}
+        {loading ? Messages.sending : Messages.send}
       </Button>
 
       {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}

@@ -1,2 +1,2 @@
-import { Welcome } from "./welcome";
-export default Welcome
+import { WelcomeMessage } from "./welcome";
+export default WelcomeMessage;

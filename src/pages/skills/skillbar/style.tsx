@@ -81,7 +81,7 @@ export const Item = styled.div`
   margin: 1rem;
   transition: box-shadow ease-in-out 0.6s, color ease-in-out 0.5s;
   width: 100%;
-  aspect-ratio: 4 / 1;
+  aspect-ratio: 6 / 1;
   text-align: center;
   cursor: pointer;
   display: grid;

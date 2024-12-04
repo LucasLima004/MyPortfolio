@@ -1,10 +1,11 @@
+import { Messages } from "../../../utils/Messages";
 import { Message } from "./style";
 
-export const Welcome = () => {
+export const WelcomeMessage = () => {
     return(
         <>
             <Message>
-                Welcome  
+                {Messages.welcome}  
             </Message>
         </>
     );
