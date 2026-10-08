@@ -4,23 +4,19 @@ import { resolve } from "node:path";
 
 const outputDir = resolve("dist/client");
 const shellFile = resolve(outputDir, "_shell.html");
-const indexFile = resolve(outputDir, "index.html");
-const notFoundFile = resolve(outputDir, "404.html");
+const faviconSource = resolve("public/favicon.ico");
 
 try {
   await access(shellFile);
 
-  await copyFile(shellFile, indexFile);
-  await copyFile(shellFile, notFoundFile);
+  await copyFile(shellFile, resolve(outputDir, "index.html"));
+  await copyFile(shellFile, resolve(outputDir, "404.html"));
 
-  console.log("GitHub Pages preparado com sucesso!");
-  console.log("- index.html criado");
-  console.log("- 404.html criado");
-} catch {
-  console.error(
-    "Arquivo dist/client/_shell.html não encontrado. " +
-      "Execute npm run build e confira a pasta dist/client.",
-  );
+  await access(faviconSource);
+  await copyFile(faviconSource, resolve(outputDir, "favicon.ico"));
 
+  console.log("Arquivos preparados para GitHub Pages.");
+} catch (error) {
+  console.error("Erro ao preparar GitHub Pages:", error.message);
   process.exit(1);
 }
