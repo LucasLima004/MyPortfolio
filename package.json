@@ -13,7 +13,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "prepare:gh-pages": "node scripts/prepare-gh-pages.mjs",
+    "deploy": "npm run prepare:gh-pages && gh-pages -d dist/client"
   },
   "overrides": {
     "rolldown": "1.2.1"
